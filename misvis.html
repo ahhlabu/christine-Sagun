@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <style>
+      body{
+        background-image: url(bld.jpeg) ;
+        background-size: cover;
+      }
+      .buttons ul{
+        list-style-type: none;
+      }
+      .buttons a{
+        font-family:"Times New Roman", Times, serif ;
+				font-size:20px;
+				font-weight:bold;
+		  	background:rgba(0,0,0,.5);
+				width:160px;
+				padding:10px;
+				text-align: center ;
+				text-transform: uppercase ;
+				color:rgb(255, 161, 20);
+				border-radius:10px;
+				cursor:pointer;
+				box-shadow:0 0 10px rgba(0,0,0,.5);
+				text-decoration:none;
+      }
+
+      .buttons li{
+        padding:15px;
+      }
+      .buttons a:hover{
+        background-color: rgb(54, 0, 0);
+        color: rgb(255, 161, 20);
+      }
+      .buttons a.active{
+        background-color: rgb(255, 161, 20);
+        color: rgb(54, 0, 0);
+      }
+
+      .split{
+        height:100%;
+        width:50%;
+        position:fixed;
+        z-index:1;
+        top:0;
+        overflow-x:hidden;
+        padding-top:20px;
+      }
+      .left{
+        left: 0;
+        width:40%;
+      }
+      .right{
+        right:0;
+        width:60%;
+      }
+
+      .vis{
+        color:rgb(255, 161, 20);
+        background:rgba(0, 0, 0, 0.6);
+				border-radius:10px;
+        margin-right: 50px;
+      }
+      .vis:hover{
+        background-color:rgba(0,0,0,.9) ;
+      }
+      .vis p{
+        font-size: 30px;
+        font-style: italic;
+        padding:20px;
+      }
+      .vis h2{
+        font-size: 50px;
+      }
+      .mis{
+        color:rgb(255, 161, 20);
+        background:rgba(0, 0, 0, 0.6);
+				border-radius:10px;
+        margin-right: 50px;
+      }
+      .mis:hover{
+        background-color:rgba(0,0,0,.9) ;
+        
+      }
+      .mis p{
+        font-size: 30px;
+        font-style: italic;
+        padding: 20px;
+      }
+      .mis h2{
+        font-size: 50px;
+      }
+
+      .logo img{
+        
+        padding:50px;
+        width:200px;
+      }
+      .left{
+        background:linear-gradient(to right,rgb(0,0,0),rgba(0, 0, 0,0.5),rgb(5, 109, 86,0));
+       }
+
+      .cv{
+        color:rgb(255, 161, 20);
+        background:rgba(0, 0, 0, 0.6);
+				border-radius:10px;
+        margin-right: 50px;
+      }
+      .cv:hover{
+        background-color:rgba(0,0,0,.9) ;
+      }
+      .cv li{
+        font-size: 30px;
+        font-style: italic;
+        padding:20px;
+      }
+      .cv h2{
+        font-size: 50px;
+      }
+
+    </style>
+  </head>
+
+  <body>
+
+    <div class="split left">
+      
+      <aside>
+        <div class="logo">
+          <img src="csu.png">
+        </div>
+        <div class="buttons">
+          <ul>
+    
+            <li><a href="index.html">indexE</a></li>
+            <li><a class="active" href="misvis.html">MISSION &  VISION</a></li>
+            <li><a href="boff.html">UNIVERSITY HYMN</a></li>
+            <li><a href="gal.html">ADMINISTRATION</a></li>
+            <li><a href="soi.html">CONTACTS</a></li>
+            <li><a href="groc.html">GROCERIES</a></li>
+            
+            
+        </ul>
+        </div>
+      </aside>
+    </div>
+
+    <div class="split right">
+      <div class="vis">
+        <h2>VISION</h2>
+        <p>CSU is a University with global stature in the arts, culture, agriculture and fisheries, the sciences as well as technological and professional fields.</p>
+      </div>
+
+      <div class="mis">
+
+        <h2>MISSION</h2>
+        <p>Cagayan State University shall produce globally competent graduates through excellent instruction, innovative and creative research, responsive public service and productive industry and community engagement.</p>
+      </div>
+      <div class="cv">
+
+        <h2>CORE VALUES</h2>
+        <ol>
+          <li>Competence</li>
+          <ul>
+            <li>Critical Thinker</li>
+            <li>Creative Problem -Solver</li>
+            <li>Competitive Performer: Nationally, Regionally and Globally.</li>
+          </ul>
+          <li>Social Responsibility</li>
+          <ul>
+            <li>Sensitive to Ethical Demands</li>
+            <li>Steward of the Environment for Future Generations</li>
+            <li>Social Justice and Economic Equity Advocate.</li>
+          </ul>
+
+          <li>Unifying Presence</li>
+          <ul>
+            <li>Uniting Theory and Practice</li>
+            <li>Uniting Strata of Society</li>
+            <li>Unifying the Nation, the ASEAN Region and the world</li>
+            <li>Uniting the University and the community.</li>
+          </ul>
+        </ol>
+
+      </div>
+    </div>
+
+  </body>
+</html>

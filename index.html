@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <style>
+      body{
+        background-image: url(bld.jpeg) ;
+        background-size: cover;
+      }
+      
+      h1{
+        text-align:center;
+				font-family: "Times New Roman", Times, serif;
+				font-size:50px;
+				background :rgba(0,0,0,.5);
+				border-radius:15px;
+				color:rgb(255, 153, 0);
+        margin-right: 100px;
+      }
+
+      
+      .buttons a{
+        font-family:"Times New Roman", Times, serif ;
+				font-size:20px;
+				font-weight:bold;
+		  	background:rgba(0,0,0,.5);
+				width:160px;
+				padding:10px;
+				text-align: center ;
+				text-transform: uppercase ;
+				color:rgb(255, 161, 20);
+				border-radius:10px;
+				cursor:pointer;
+				box-shadow:0 0 10px rgba(0,0,0,.5);
+				text-decoration:none;
+      }
+
+      .buttons li{
+        padding:15px;
+      }
+      .buttons a:hover{
+        /*background: #0c4d47;*/
+        background-color: rgb(54, 0, 0);
+        color: rgb(255, 161, 20);
+      }
+      .buttons a.active{
+        background-color: rgb(255, 161, 20);
+        color: rgb(54, 0, 0);
+      }
+
+
+      .split{
+        height:100%;
+        width:50%;
+        position:fixed;
+        z-index:1;
+        top:0;
+        overflow-x:hidden;
+        padding-top:20px;
+      }
+      .left{
+        left:0;
+        width:40%;
+      }
+      .right{
+        right:0;
+        width:60%;
+      }
+      .logo img{
+        padding:50px;
+        width:200px;
+      }
+       .left{
+        background:linear-gradient(to right,rgb(0, 0, 0),rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0));
+       }
+       pre{
+        font-size: 25px;
+        background-color: rgba(0, 0, 0,0.7);
+        border-radius: 15px;
+        color:rgb(255, 161, 20);
+       }
+       .contacts{
+        padding-top: 50%;
+        padding-left: 40%;
+       }
+       .contacts pre a{
+        color:rgb(255, 161, 20);
+       }
+       .contacts pre a:hover{
+        color: aliceblue;
+       }
+
+       .wave-menu {
+    border: 4px solid #545FE5;
+    border-radius: 50px;
+    width: 200px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    transition: ease 0.2s;
+    position: relative;
+    background: #fff;
+  }
+  
+  .wave-menu li {
+    list-style: none;
+    height: 30px;
+    width: 4px;
+    border-radius: 10px;
+    background: #545FE5;
+    margin: 0 6px;
+    padding: 0;
+    animation-name: wave1;
+    animation-duration: 0.3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transition: ease 0.2s;
+  }
+  
+  .wave-menu:hover > li {
+    background: #fff;
+  }
+  
+  .wave-menu:hover {
+    background: #545FE5;
+  }
+  
+  .wave-menu li:nth-child(2) {
+    animation-name: wave2;
+    animation-delay: 0.2s;
+  }
+  
+  .wave-menu li:nth-child(3) {
+    animation-name: wave3;
+    animation-delay: 0.23s;
+    animation-duration: 0.4s;
+  }
+  
+  .wave-menu li:nth-child(4) {
+    animation-name: wave4;
+    animation-delay: 0.1s;
+    animation-duration: 0.3s;
+  }
+  
+  .wave-menu li:nth-child(5) {
+    animation-delay: 0.5s;
+  }
+  
+  .wave-menu li:nth-child(6) {
+    animation-name: wave2;
+    animation-duration: 0.5s;
+  }
+  
+  .wave-menu li:nth-child(8) {
+    animation-name: wave4;
+    animation-delay: 0.4s;
+    animation-duration: 0.25s;
+  }
+  
+  .wave-menu li:nth-child(9) {
+    animation-name: wave3;
+    animation-delay: 0.15s;
+  }
+  
+  @keyframes wave1 {
+    from {
+      transform: scaleY(1);
+    }
+  
+    to {
+      transform: scaleY(0.5);
+    }
+  }
+  
+  @keyframes wave2 {
+    from {
+      transform: scaleY(0.3);
+    }
+  
+    to {
+      transform: scaleY(0.6);
+    }
+  }
+  
+  @keyframes wave3 {
+    from {
+      transform: scaleY(0.6);
+    }
+  
+    to {
+      transform: scaleY(0.8);
+    }
+  }
+  
+  @keyframes wave4 {
+    from {
+      transform: scaleY(0.2);
+    }
+  
+    to {
+      transform: scaleY(0.5);
+    }
+  }
+
+    *{
+    margin: 0;
+    padding: 0;
+    }
+  #pre-loader{
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+  }
+  
+      
+    </style>
+  </head>
+
+  <body>
+    <div id="pre-loader">
+      <ul class="wave-menu">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+      </ul>
+  </div>
+    <div class="all">
+      <div class="split left">
+        <aside>
+  
+          <div class="logo">
+            <img src="csu.png">
+          </div>
+  
+          <div class="buttons">
+            <ul>
+      
+              <li><a class="active" href="index.html">indexE</a></li>
+              <li><a href="misvis.html">VISION MISSION</a></li>
+              <li><a href="boff.html">UNIVERSITY HYMN</a></li>
+              <li><a href="gal.html">ADMINISTRATION</a></li>
+              <li><a href="soi.html">CONTACTS</a></li>
+              
+              
+          </ul>
+          </div>
+        </aside>
+      </div>
+      
+      <div class="split right">
+        <div class="content">
+          <h1>CAGAYAN STATE UNIVERSITY</h1>
+        </div>
+        <div class="contacts">
+          <pre>
+            <a href="troll.html">FACEBOOK</a>
+            AA@gmail.com
+            AA@gmail.com
+            AA@gmail.com
+            09123456789
+          </pre>
+        </div>
+      
+      </div>
+    </div>
+
+    <script>
+    var loader= document.getElementById("pre-loader");
+
+      window.addEventListener("load", function(){
+          loader.style.display="none";
+      })
+      </script>
+  </body>
+</html>

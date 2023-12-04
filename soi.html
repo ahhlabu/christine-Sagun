@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <style>
+      body{
+        background-image: url(bld.jpeg) ;
+        background-size: cover;
+      }
+      .buttons a{
+        font-family:"Times New Roman", Times, serif ;
+				font-size:20px;
+				font-weight:bold;
+		  	background:rgba(0,0,0,.5);
+				width:160px;
+				padding:10px;
+				text-align: center ;
+				text-transform: uppercase ;
+				color:rgb(255, 161, 20);
+				border-radius:10px;
+				cursor:pointer;
+				box-shadow:0 0 10px rgba(0,0,0,.5);
+				text-decoration:none;
+      }
+
+      .buttons li{
+        padding:15px;
+      }
+      .buttons a:hover{
+        background-color: rgb(54, 0, 0);
+        color: rgb(255, 161, 20);
+      }
+      .buttons a.active{
+        background-color: rgb(255, 161, 20);
+        color: rgb(54, 0, 0);
+      }
+      .split{
+        height:100%;
+        width:50%;
+        position:fixed;
+        z-index:1;
+        top:0;
+        overflow-x:hidden;
+        padding-top:20px;
+      }
+      .left{
+        left:0;
+        width:40%;
+      }
+      .right{
+        right:0;
+        width:60%;
+      }
+
+      .logo img{
+        padding:50px;
+        width:200px;
+      }
+      .left{
+        background:linear-gradient(to right,rgb(0,0,0),rgba(0, 0, 0,0.5),rgb(5, 109, 86,0));
+       }
+       .img img{
+        width: 1000px;
+        height: 400px;
+        opacity:90%;
+        padding-bottom: 50px;
+       }
+       .img p{
+        color:rgb(255, 161, 20);
+        font-size: 40px;
+        background:linear-gradient(to right,rgb(0,0,0),rgba(0, 0, 0,0.5),rgb(5, 109, 86,0));
+       }
+       .right{
+        background-color: rgba(0, 0, 0,0.5);
+       }
+
+       .cv{
+        color:rgb(255, 161, 20);
+        background:rgba(0, 0, 0, 0.7);
+				border-radius:10px;
+        margin-right: 50px;
+      }
+      .cv:hover{
+        background-color:rgba(0,0,0,.7) ;
+      }
+      .cv li{
+        font-size: 30px;
+        font-style: italic;
+        padding:20px;
+      }
+      .cv h2{
+        font-size: 50px;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <div class="split left">
+      <aside>
+        <div class="logo">
+          <img src="csu.png">
+        </div>
+        <div class="buttons">
+          <ul>
+    
+            <li><a href="index.html">indexE</a></li>
+            <li><a href="misvis.html">MISSION &  VISION</a></li>
+            <li><a href="boff.html">UNIVERSITY HYMN</a></li>
+            <li><a href="gal.html">ADMINISTRATION</a></li>
+            <li><a class="active" href="soi.html">CONTACTS</a></li>
+            
+        </ul>
+        </div>
+      </aside>
+    </div>
+
+    <div class="split right">
+      
+      <div class="cv">
+
+        <h2>CONTACTS</h2>
+        <ol>
+          <li>Office of the President</li>
+          <ul>
+            <li>Phone: (078) 844-0430 Loc.122</li>
+            <li>President@csu.edu.ph</li>
+          </ul>
+          <li>Vide President for Academics</li>
+          <ul>
+            <li>Phone: (078) 846-2997</li>
+          </ul>
+          <li>Vide President for Administration and Finance</li>
+          <ul>
+            <li>Phone: (078) 844-0098/0099 Loc. 129</li>
+          </ul>
+          <li>Vide President for Partnership and Resource Mobilization</li>
+          <ul>
+            <li>Phone: (078) 377-7208</li>
+          </ul>
+          <li>Vide President for Research and Extension</li>
+          <ul>
+            <li>Phone: (078) 377-2954</li>
+          </ul>
+          <li>Registrar Office</li>
+          <ul>
+            <li>Phone: (078) 844-0098/0099</li>
+            <li>Email: registrar@csu.edu.ph</li>
+          </ul>
+          <li>University Planning and Quality Assurance Office</li>
+          <ul>
+            <li> Phone: (078) 396-0165</li>
+            <li>Email: updo@csu.edu.ph</li>
+          </ul>
+          <li>Management Information System (MIS) Office</li>
+          <ul>
+            <li>Phone: (078) 396-0165</li>
+            <li>Email: csumis@csu.edu.ph</li>
+          </ul>
+          <li>Guidance and Counseling Office</li>
+          <ul>
+            <li> Phone: (078) 844-2374</li>
+          </ul>
+        </ol>
+
+      </div>
+    </div>
+  </body>
+</html>
